@@ -16,10 +16,10 @@
       {{update-dog dog=dog update="update"}}
       <img src={{dog.image}}>
       <div class="container-fliud">
-        <h2>{{dog.name}}</h2>
+        <h2>{{#link-to 'dog' dog.id}}{{dog.name}}{{/link-to}}</h2>
         <h4>{{dog.type}}</h4>
         <h4>{{dog.age}} years old</h4>
-        <p>{{dog.blog}}</p>
+        <!-- <p>{{dog.blog}}</p> -->
         {{delete-dog dog=dog deleteDog="deleteDog"}}
       </div>
     </div>
