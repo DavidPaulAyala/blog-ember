@@ -1,0 +1,14 @@
+{ "dogs": [{
+  "name": "Rex",
+  "type": "German Shepherd",
+  "age": 4,
+  "blog": "German Shepherds are sooo freaking cute!!! OMG!!!",
+  "image": "http://cdn2-www.dogtime.com/assets/uploads/gallery/german-shepherd-dog-breed-pictures/standing-7.jpg"
+}, {
+  "name": "Gina",
+  "type": "Corgi",
+  "age": 3,
+  "blog": "Look at the freaking cute Corgi!!! OMG!!!",
+  "image": "http://d21vu35cjx7sd4.cloudfront.net/dims3/MMAH/crop/0x0%2B0%2B0/resize/645x380/quality/90/?url=http%3A%2F%2Fs3.amazonaws.com%2Fassets.prod.vetstreet.com%2F83%2F9e8de0a7f411e0a0d50050568d634f%2Ffile%2FPembroke-Welsh-Corgi-3-645mk62711.jpg"
+}]
+}

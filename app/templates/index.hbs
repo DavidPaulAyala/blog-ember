@@ -1,0 +1,17 @@
+
+<div class="dogs">
+  {{#each model as |dog|}}
+  <h2>{{dog.name}}</h2>
+  <h3>{{dog.type}}</h3>
+  <h3>{{dog.age}} years old</h3>
+  <p>{{dog.blog}}</p>
+  <img src={{dog.image}}>
+  {{delete-dog dog=dog deleteDog="deleteDog"}}
+  <hr>
+  {{/each}}
+</div>
+
+{{new-dog saveDog2="saveDog3"}}
+
+{{#link-to 'about'}}About{{/link-to}}
+{{#link-to 'contact'}}Contact{{/link-to}}
