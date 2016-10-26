@@ -12,7 +12,7 @@ export default Ember.Route.extend({
         }
       });
       dog.save();
-      this.transitionTo('index');
+      this.transitionTo('dog');
     },
 
     deleteDog(dog){
