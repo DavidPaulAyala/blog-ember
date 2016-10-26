@@ -1,0 +1,78 @@
+input {
+  width: 45%;
+  margin: 8px 0;
+  box-sizing: border-box;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  /*width: 200px;*/
+
+}
+input:focus {
+  border: 3px solid #555;
+  outline: none;
+}
+
+img{
+  width: 100%;
+}
+.container {
+  text-align: center;
+}
+.delete {
+  width: 100%;
+  color: white;
+  border: none;
+  padding: 4px 4px;
+  background-color: #e56767;
+}
+.update {
+  width: 100%;
+  color: white;
+  border: none;
+  padding: 4px 4px;
+  background-color: #5cd688;
+}
+.update2{
+  width: 100%;
+  float: left;
+  color: white;
+  border: none;
+  padding: 4px 4px;
+  background-color: #5cd688;
+}
+.post{
+  width: 50%;
+  color: white;
+  border: none;
+  padding: 4px 4px;
+  background-color: #5cd688;
+}
+.post2 {
+  width: 50%;
+  color: white;
+  border: none;
+  padding: 4px 4px;
+  background-color: #5cd688;
+}
+.header {
+  color: white;
+  width: 100%;
+  background-color: #84aff4;
+  padding: 25px;
+  margin: auto;
+  margin-bottom: 10px;
+}
+div.polaroid {
+  margin: auto;
+  margin-top: 10px;
+  width: 50%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+}
+
+div.container-fluid {
+  text-align: center;
+  padding: 10px 20px;
+}

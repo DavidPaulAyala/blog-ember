@@ -1,33 +1,33 @@
 {{#if addNewDog}}
 <div>
     <form>
-      <div class="form-group">
+      <div>
         <label for="name">Name</label>
         {{input value=name id="name"}}
       </div>
 
-      <div class="form-group">
+      <div>
         <label for="type">Type</label>
         {{input value=type id="type"}}
       </div>
 
-      <div class="form-group">
+      <div>
         <label for="type">Age</label>
         {{input value=age id="age"}}
       </div>
 
-      <div class="form-group">
+      <div>
         <label for="type">Blog</label>
         {{input value=blog id="blog"}}
       </div>
 
-      <div class="form-group">
+      <div>
         <label for="type">Image</label>
         {{input value=image id="image"}}
       </div>
-      <button {{action 'saveDog1'}}>Post Dog</button>
+      <button class="post" {{action 'saveDog1'}}>Post Dog</button>
     </form>
     </div>
       {{else}}
-<button {{action 'dogFormShow'}}>Post</button>
+<button class="post2" {{action 'dogFormShow'}}>Post</button>
 {{/if}}

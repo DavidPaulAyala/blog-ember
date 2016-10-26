@@ -1,0 +1,14 @@
+{{#if updateDogForm}}
+  <h4>Update {{dog.name}}'s blog</h4>
+  <div>
+    <form>
+      <div class="form-group">
+        <label for="blog">Blog</label>
+        {{input value=blog id="blog" placeholder=dog.blog}}
+      </div>
+      <button class="update" {{action 'update' dog}}>Update Blog</button>
+    </form>
+  </div>
+{{else}}
+  <button class="update2" {{action 'updateDogForm'}}>Update</button>
+{{/if}}
