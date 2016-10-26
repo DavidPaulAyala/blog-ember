@@ -1,21 +1,33 @@
 body{
   font-family: futura;
 }
-input {
+#allInput input {
   width: 45%;
   margin: 8px 0;
   box-sizing: border-box;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   outline: none;
-  /*width: 200px;*/
 
 }
-input:focus {
+#allInput input:focus {
   border: 3px solid #555;
   outline: none;
 }
+#blog input {
+  width: 100%;
+  height: 150px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
 
+}
+#blog input:focus {
+  border: 3px solid #555;
+  outline: none;
+}
 img{
   width: 100%;
 }
@@ -78,4 +90,8 @@ div.polaroid {
 div.container-fluid {
   text-align: center;
   padding: 10px 20px;
+}
+
+#blog-size {
+  height: 100px;
 }
