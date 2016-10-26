@@ -14,7 +14,7 @@
   {{#each model as |dog|}}
     <div class="polaroid">
       {{update-dog dog=dog update="update"}}
-      <img src={{dog.image}}>
+      {{#link-to 'dog' dog.id}}<img src={{dog.image}}>{{/link-to}}
       <div class="container-fliud">
         <h2>{{#link-to 'dog' dog.id}}{{dog.name}}{{/link-to}}</h2>
         <h4>{{dog.type}}</h4>
