@@ -31,6 +31,9 @@ body{
 img{
   width: 100%;
 }
+li {
+  list-style-type: none;
+}
 .container {
   text-align: center;
 }

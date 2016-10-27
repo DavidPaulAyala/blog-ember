@@ -1,4 +1,7 @@
 <h1>{{model.name}} the {{model.type}}</h1>
 
 {{update-dog dog=model update="update"}}
-{{dog-detail dog=model deleteDog="deleteDog"}}
+
+{{dog-detail dog=model deleteDog="deleteDog" deleteComment="deleteComment"}}
+
+{{new-comment saveComment="saveComment" dog=model}}

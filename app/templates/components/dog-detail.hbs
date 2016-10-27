@@ -2,3 +2,10 @@
 {{dog.blog}}
 <hr>
 <button class="delete "{{action 'delete' dog}}>Delete</button>
+ <h2>comments</h2>
+ <ul>
+   {{#each dog.comments as |comment|}}
+   {{comment-tile comment=comment deleteComment="deleteComment"}}
+   {{/each}}
+ </ul>
+ <button {{action 'delete' comment}}>Delete</button>

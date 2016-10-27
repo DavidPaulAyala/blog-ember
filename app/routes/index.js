@@ -14,11 +14,11 @@ export default Ember.Route.extend({
       newDog.save();
       this.transitionTo('index');
     },
-    saveComment(params) {
-      var newComment = this.store.createRecord('comment', params);
-      newComment.save();
-      this.transitionTo('index');
-    },
+    // saveComment(params) {
+    //   var newComment = this.store.createRecord('comment', params);
+    //   newComment.save();
+    //   this.transitionTo('index');
+    // },
 
     update(dog, params) {
       Object.keys(params).forEach(function(key) {
