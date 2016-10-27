@@ -1,13 +1,22 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-  model(){
-    return this.store.findAll('dog');
+  model() {
+    return Ember.RSVP.hash({
+      dogs: this.store.findAll('dog'),
+      comments: this.store.findAll('comment')
+    });
   },
+
   actions: {
     saveDog3(params){
       var newDog = this.store.createRecord('dog', params);
       newDog.save();
+      this.transitionTo('index');
+    },
+    saveComment(params) {
+      var newComment = this.store.createRecord('comment', params);
+      newComment.save();
       this.transitionTo('index');
     },
 

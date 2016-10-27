@@ -1,17 +1,5 @@
-<!-- <nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Home</a></li>
-      <li><a href="#">{{#link-to 'about'}}About{{/link-to}}</a></li>
-      <li><a href="#">{{#link-to 'contact'}}Contact{{/link-to}}</a></li>
-    </ul>
-  </div>
-</nav> -->
-      <!-- {{#link-to 'about'}}About{{/link-to}} -->
-      <!-- {{#link-to 'contact'}}Contact{{/link-to}} -->
-
 {{new-dog saveDog2="saveDog3"}}
-  {{#each model as |dog|}}
+  {{#each model.dogs as |dog|}}
     <div class="polaroid">
       {{update-dog dog=dog update="update"}}
       {{#link-to 'dog' dog.id}}<img src={{dog.image}}>{{/link-to}}
@@ -23,4 +11,13 @@
         {{delete-dog dog=dog deleteDog="deleteDog"}}
       </div>
     </div>
-  {{/each}}
+    {{/each}}
+
+    <h2> All Comments </h2>
+    <ul>
+      {{#each model.comments as |comment|}}
+        <li>{{comment.content}} - by {{comment.author}}</li>
+      {{/each}}
+    </ul>
+
+    {{new-comment saveComment="saveComment"}}
