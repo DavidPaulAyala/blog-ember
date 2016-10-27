@@ -1,5 +1,23 @@
 body{
+  margin-top: 5%;
   font-family: futura;
+}
+input {
+  position: relative; left: 20%;
+  width: 45%;
+  height: 40px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+input:focus {
+  border: 3px solid #555;
+  outline: none;
+}
+footer{
+  text-align: center;
 }
 #allInput input {
   width: 45%;
@@ -8,7 +26,6 @@ body{
   -webkit-transition: 0.5s;
   transition: 0.5s;
   outline: none;
-
 }
 #allInput input:focus {
   border: 3px solid #555;
@@ -34,15 +51,27 @@ img{
 li {
   list-style-type: none;
 }
-.container {
+
+.container-content {
   text-align: center;
 }
 .delete {
+  position: relative; left: -3.3%; bottom: -10px;
+  width: 106.5%;
+  height:50px;
+  color: white;
+  border: none;
+  padding: 4px 4px;
+  background-color: #e56767;
+}
+.delete2 {
+  height: 100px;
   width: 100%;
   color: white;
   border: none;
   padding: 4px 4px;
   background-color: #e56767;
+  margin-bottom: 15px;
 }
 .update {
   width: 100%;
@@ -60,22 +89,35 @@ li {
   background-color: #5cd688;
 }
 .post{
-  width: 50%;
+  position: relative; left: 20%;
+  width: 60%;
   color: white;
   border: none;
   padding: 4px 4px;
   background-color: #5cd688;
 }
 .post2 {
-  width: 50%;
+  height: 40px;
+  position: relative; left: 20%;
+  width: 60%;
   color: white;
   border: none;
   padding: 4px 4px;
   background-color: #5cd688;
 }
+.post2:hover {
+  text-align: center;
+  background-color: white;
+  color: #5cd688;
+  border: 2px solid #4CAF50;
+}
+.dogheader {
+  text-align: center;
+}
 .header {
+  text-align: center;
   color: white;
-  width: 100%;
+  max-width: 100%;
   background-color: #84aff4;
   padding: 25px;
   margin: auto;
@@ -84,15 +126,50 @@ li {
 div.polaroid {
   margin: auto;
   margin-top: 10px;
-  width: 50%;
+  width: 60%;
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin-bottom: 25px;
 }
 
-div.container-fluid {
+div.container-content{
   text-align: center;
   padding: 10px 20px;
+}
+.comments{
+  text-align: left;
+  padding: 50px;
+  margin-top: 15px;
+  /*margin-bottom: 5px;*/
+  border-top: 1px solid lightgray;
+  border-bottom:  1px solid lightgray;
+}
+.deleteCom{
+  position: relative; left: 80%; bottom: 127px;
+  width: 20%;
+  height: 121px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: white;
+  border: none;
+  padding: 4px 4px;
+  background-color: #e56767;
+}
+.newCom {
+  width: 100%;
+  height: 121px;
+  color: white;
+  border: none;
+  padding: 4px 4px;
+  background-color: #5cd688;
+}
+.save {
+  width: 70%;
+  height: 81px;
+  color: white;
+  border: none;
+  padding: 4px 4px;
+  background-color: #5cd688;
 }
 
 #blog-size {

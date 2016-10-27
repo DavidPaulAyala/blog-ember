@@ -8,8 +8,8 @@ export default Ember.Component.extend({
     },
     saveComment() {
      var params = {
-       author: this.get('author'),
-       content: this.get('content'),
+       author: this.get('author') || "not given",
+       content: this.get('content') || "left blank",
        dog: this.get('dog')
      };
      this.set('addNewComment', false);

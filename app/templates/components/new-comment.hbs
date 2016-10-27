@@ -2,7 +2,8 @@
 <h1>New Comment</h1>
   <div>
     <form>
-      <div class="form-group">
+      <div class="newCom2">
+        <div class="form-group">
         <label for="author">Author</label>
         {{input value=author id="author"}}
       </div>
@@ -10,9 +11,10 @@
         <label for="content">Content</label>
         {{input value=content id="content"}}
       </div>
-      <button {{action 'saveComment'}}>Save</button>
+      <button class="save" {{action 'saveComment'}}>Enter</button>
+    </div>
     </form>
   </div>
 {{else}}
-  <button {{action 'commentFormShow'}}>New Comment</button>
+  <button class="newCom" {{action 'commentFormShow'}}>New Comment</button>
 {{/if}}

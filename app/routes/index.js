@@ -29,7 +29,7 @@ export default Ember.Route.extend({
       dog.save();
       this.transitionTo('index');
     },
-
+    
     deleteDog(dog){
       dog.destroyRecord();
       this.transitionTo('index');

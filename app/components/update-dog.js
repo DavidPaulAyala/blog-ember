@@ -2,6 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   updateDogForm: false,
+  updateCommentForm: false,
   actions: {
     updateDogForm() {
       this.set('updateDogForm', true);
@@ -12,6 +13,6 @@ export default Ember.Component.extend({
       };
       this.set('updateDogForm', false);
       this.sendAction('update', dog, params);
-    }
-  }
+    },
+}
 });

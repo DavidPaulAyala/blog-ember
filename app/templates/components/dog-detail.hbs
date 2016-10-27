@@ -1,11 +1,10 @@
+<div class="details">
 <p><img src={{dog.image}} alt={{dog.type}}></p>
 {{dog.blog}}
-<hr>
-<button class="delete "{{action 'delete' dog}}>Delete</button>
- <h2>comments</h2>
- <ul>
+</div>
+
+<button class="delete2" {{action 'delete' dog}}>Delete</button>
+
    {{#each dog.comments as |comment|}}
-   {{comment-tile comment=comment deleteComment="deleteComment"}}
+    {{comment-tile comment=comment  deleteComment="deleteComment"}}
    {{/each}}
- </ul>
- <button {{action 'delete' comment}}>Delete</button>
